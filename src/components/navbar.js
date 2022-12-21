@@ -1,0 +1,41 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+function CollapsibleExample() {
+  return (
+    
+    <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark" style={{fontSize:"x-large"}}>
+      <Container>
+        <Navbar.Brand>Infinity Realm</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link >Men</Nav.Link>
+            <Nav.Link >Women</Nav.Link>
+            <NavDropdown title="Category" id="collasible-nav-dropdown">
+              <NavDropdown.Item >Shoes</NavDropdown.Item>
+              <NavDropdown.Item >
+                Clothes
+              </NavDropdown.Item>
+              <NavDropdown.Item >New Arrival</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item >
+                Go To Top
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+          <Nav>
+            <Nav.Link>About Us</Nav.Link>
+            <Nav.Link eventKey={2}>
+              Contact Us
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    
+  );
+}
+
+export default CollapsibleExample;
