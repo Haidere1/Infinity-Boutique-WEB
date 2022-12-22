@@ -2,7 +2,7 @@
 import '../styles/login.css'
 import { createContext, useEffect, useRef, useState } from 'react';
 // import User from './user';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 export const Appcontext= createContext(null);
 const Login = (e) => {
 
@@ -63,7 +63,7 @@ const Login = (e) => {
     </table>
     <button onClick={navigation } className="btn1">Login</button>
     <p style={{fontSize: 20, marginTop:"4vh"}}><b> Dont have an account?</b></p>
-     <button  className="btn1" onClick={onclick}>Signup</button>
+   <Link to='/signup'><button  className="btn1" onClick={onclick}>Signup</button></Link>
 
 {/* <div style={{marginTop:"20px"}}>
 <Appcontext.Provider value={{username}}>

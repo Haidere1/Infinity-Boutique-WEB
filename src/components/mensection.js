@@ -5,14 +5,26 @@ import '../styles/mensection.css'
 import { useState } from "react";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
+import cl1 from '../men/cl1.jpg'
+import cl2 from '../men/cl2.jpg'
+import cl3 from '../men/cl3.jpg'
+import cl4 from '../men/cl4.jpg'
+import cl5 from '../men/cl5.jpg'
+import cl6 from '../men/cl6.jpg'
+import cl7 from '../men/cl7.jpg'
+
 
 
 const Men = () => {
     const [menpr]=useState([
-        {id:0,primg:menmid,price:23},
-        {id:0,primg:menmid,price:12},
-        {id:0,primg:menmid,price:44},
-        {id:0,primg:menmid,price:55},
+        {id:0,primg:cl1,price:23},
+        {id:0,primg:cl2,price:12},
+        {id:0,primg:cl3,price:44},
+        {id:0,primg:cl4,price:55},
+        {id:0,primg:cl5,price:55},
+        {id:0,primg:cl6,price:55},
+        {id:0,primg:cl7,price:55},
+        {id:0,primg:cl7,price:55},
         
     ])
     return(

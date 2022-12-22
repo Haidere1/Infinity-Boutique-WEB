@@ -6,7 +6,7 @@ import cimage3 from '../images/cimage3.jpg'
 import men from '../images/men.jpg'
 import women from '../images/women.jpg'
 import '../styles/main.css'
-import bg7 from '../images/bg23.jpg'
+import mainbg from '../backgrounds/mainbg.jpg'
 import cl1 from '../clothes/cl1.jpg'
 import cl2 from '../clothes/cl2.jpg'
 import cl3 from '../clothes/cl3.jpg'
@@ -38,7 +38,7 @@ const Mainpage = (e) => {
     
 
     return(
-        <div className='mainpage' style={{backgroundImage:`url(${bg7})`}}>
+        <div className='mainpage' style={{backgroundImage:`url(${mainbg})`}}>
             <CollapsibleExample/>
 
 
@@ -122,7 +122,7 @@ const Mainpage = (e) => {
     {/* Content For Newly Arrive Products: */}
 
       <div className="NewArrival " >
-        <div style={{backgroundColor:"white",color:"black"}}>
+        <div style={{backgroundColor:"transparent",color:"white",border:"1px solid white"}}>
         <h1> Featured Products</h1>
         </div>
     <div className="row col-12" >
