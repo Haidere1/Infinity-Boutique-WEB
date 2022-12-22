@@ -13,10 +13,10 @@ function CollapsibleExample() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
           
-          <Nav.Link href='/men'>Men</Nav.Link>
+         <Link to='/men' style={{textDecoration:"none",color:"white"}}> <Nav.Item style={{paddingTop:"8px"}}>Men</Nav.Item></Link>
           
           
-            <Nav.Link href='/women'>Women</Nav.Link>
+         <Link to='/women' style={{textDecoration:"none",color:"white"}}>  <Nav.Item style={{paddingLeft:"10px",paddingTop:"8px"}}>Women</Nav.Item></Link>
             <NavDropdown title="Category" id="collasible-nav-dropdown">
               <NavDropdown.Item >Shoes</NavDropdown.Item>
               <NavDropdown.Item >
