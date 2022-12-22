@@ -35,7 +35,7 @@ const Women= () => {
             <div className="ws1" style={{backgroundImage:`url(${bgwomen})`}} >
             <CollapsibleExample/>
             {/* <img src={bgwomen} alt='nothing'/>  */}
-            <h1 className="intro"> Infinity Realm</h1>
+            <h1> Infinity Realm</h1>
             <p> Best Quality Women Proudcts All That You need</p>
             </div>
 

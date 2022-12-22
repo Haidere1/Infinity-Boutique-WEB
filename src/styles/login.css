@@ -85,11 +85,10 @@ a
 {
     text-align: center;
     position: relative;
-    top:2vh;
+    top:10px;
     border-radius: 20px;
     left:0px;
-    width: 8vw;
-    
+    width:5vw;
     background-color: transparent;
      border:1px solid white; 
      color:white;

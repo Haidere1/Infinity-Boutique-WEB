@@ -2,17 +2,21 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 function CollapsibleExample() {
   return (
     
     <Navbar collapseOnSelect expand="lg" bg="transparent" variant="dark" style={{fontSize:"x-large"}}>
       <Container>
-        <Navbar.Brand>Infinity Realm</Navbar.Brand>
+       <Link to='/main' style={{textDecoration:"none"}}><Navbar.Brand>Infinity Realm</Navbar.Brand></Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link >Men</Nav.Link>
-            <Nav.Link >Women</Nav.Link>
+          
+          <Nav.Link href='/men'>Men</Nav.Link>
+          
+          
+            <Nav.Link href='/women'>Women</Nav.Link>
             <NavDropdown title="Category" id="collasible-nav-dropdown">
               <NavDropdown.Item >Shoes</NavDropdown.Item>
               <NavDropdown.Item >

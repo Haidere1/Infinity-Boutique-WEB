@@ -15,7 +15,7 @@
 
 .ws1 h1
 {
-    font-size: 250px;
+    font-size:20vw;
     color: white;
     position: absolute;
     top: 15vh;
@@ -23,7 +23,7 @@
 }
 .ws1 p
 {
- font-size: 50px;
+ font-size:4vw;
  position: absolute;
 top: 50vh;
 left: 30vw;
