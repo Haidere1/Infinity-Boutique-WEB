@@ -6,7 +6,7 @@ import cimage3 from '../images/cimage3.jpg'
 import men from '../images/men.jpg'
 import women from '../images/women.jpg'
 import '../styles/main.css'
-import bg7 from '../images/bgnew.jpg'
+import bg7 from '../images/bg23.jpg'
 import cl1 from '../clothes/cl1.jpg'
 import cl2 from '../clothes/cl2.jpg'
 import cl3 from '../clothes/cl3.jpg'
@@ -15,6 +15,8 @@ import cl5 from '../clothes/cl5.jpg'
 import cl6 from '../clothes/cl6.jpg'
 import cl7 from '../clothes/cl7.jpg'
 import cl8 from '../clothes/cl8.jpg'
+import newsbg from '../backgrounds/newsbg.jpg'
+import mennewsbg from '../backgrounds/mennews.jpg'
 import { useRef, useState } from "react";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
@@ -86,7 +88,7 @@ const Mainpage = (e) => {
     
     <div className="containercat">
         <div className="box">
-        <img src={men} alt="nothing found"/>
+        <Link to='/men'><img src={men} alt="nothing found"/></Link>
         <h2>Men</h2>
         </div>
 
@@ -97,13 +99,32 @@ const Mainpage = (e) => {
 
     </div>
 
+
+        {/* Middle News Sectio */}
+    
+    
+    <div className="mainnews" style={{backgroundImage:`url(${mennewsbg})`}}> 
+
+    <div>
+      <h1> 50% Off On All New Winter Products</h1>
+      <h2>Check Out New Stuff</h2>
+      <button> Go Now</button>
+
+    </div>
+      
+
+    </div>
+
     {/* <div className="newarr">
         <h2 style={{borderBottom:" 1px dotted white" ,width:"12vw"}}>New Arrival</h2>
     </div> */}
     
     {/* Content For Newly Arrive Products: */}
 
-      <div className="NewArrival glass" >
+      <div className="NewArrival " >
+        <div style={{backgroundColor:"white",color:"black"}}>
+        <h1> Featured Products</h1>
+        </div>
     <div className="row col-12" >
     {
       products.map((products,key) =>(
@@ -116,6 +137,8 @@ const Mainpage = (e) => {
       ))
     }
     </div>
+    <button>Load More</button>
+
     </div>
     <Footer/>
 

@@ -4,6 +4,7 @@ import menmid from '../men/menmid6.jpg'
 import '../styles/mensection.css'
 import { useState } from "react";
 import Footer from "./footer";
+import { Link } from "react-router-dom";
 
 
 const Men = () => {
@@ -42,7 +43,8 @@ const Men = () => {
             menpr.map((pr,key)=>(
                 
                 <div className="mprdisp" style={{width:"20vw"}}>
-                <img src={pr.primg} alt='nothing'/>
+
+                <Link to='/viewproduct'><img src={pr.primg} alt='nothing'/></Link>
                    
                 </div>
                 

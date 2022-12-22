@@ -11,9 +11,12 @@ import Viewproduct from "./components/viewproduct";
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Viewproduct/>}/> 
+      <Route path="/" element={<Login/>}/> 
       <Route path="/main" element={<Mainpage/>}/>
+      <Route path="/men" element={<Men/>}/>
       <Route path="/women" element={<Women/>}/>
+      <Route path="/viewproduct" element={<Viewproduct/>}/>
+      
 
      </Routes>
   );

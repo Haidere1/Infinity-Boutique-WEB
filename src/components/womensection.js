@@ -40,8 +40,8 @@ const Women= () => {
             </div>
 
         <div className="newsflash">
-            <h1>Women Being the best ye wo</h1>
-            <p>genereandasj  jasdj sajad aajsdha j jasd j jasd jsad aajsdha</p>
+            <h1>Wome Being The Best Deserve The Best</h1>
+            <p>We here at Infinity Realm make sure that our queens get the best products</p>
         </div>
 
 
