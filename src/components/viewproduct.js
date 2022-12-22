@@ -1,6 +1,7 @@
 import CollapsibleExample from "./navbar";
 import cartbg from '../backgrounds/cartbg10.jpg'
 import '../styles/viewproduct.css'
+import cl1 from '../men/cl1.jpg'
 const Viewproduct = () => {
     return ( 
         <div style={{backgroundImage:`url(${cartbg})`}} className="mainpr">
@@ -9,7 +10,7 @@ const Viewproduct = () => {
                
             <div className="innerview">
             <div className="innerimg">
-            <img src={cartbg} alt=""></img>
+            <img src={cl1} alt=""></img>
             </div>
             <div className="prddescp">
                 <h1>
